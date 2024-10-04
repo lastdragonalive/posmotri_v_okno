@@ -16,6 +16,8 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+
 }
 
 h1,
@@ -35,4 +37,68 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  display: flex;
+  align-items: flex-end;
+  width: 1140px;
+  align-self: center;
+}
+
+.content__list-item:not(:last-child) {
+  padding-bottom: 30px;
+}
+
+.result {
+  padding-right: 30px;
+}
+
+.result__video-container {
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.result_video {
+  object-fit: cover;
+  width: 711px;
+  height: 386px;
+
+}
+
+
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__list {
+  height: 298px;
+  position: relative;
+  overflow: scroll;
+}
+
+.content__details {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  padding-bottom: 26px;
+}
+
+.content__video-card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+
+/*ЧТО ТУТ ЗАЮЗАТЬ: ГРИД ИЛИ ФЛЕКС-ГРОУ?*/
+.content__video-card-description-container {
+  flex-grow: 2;
 }
