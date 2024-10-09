@@ -134,18 +134,22 @@ fieldset {
 }
 
 .search-form__pseudo-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 19px;
   height: 19px;
   border: 1px solid rgba(255, 255, 255);
-  margin-right: 2px;
+  margin-right: 5px;
   cursor: url(/images/cursor.svg), url(/images/cursor.png), pointer;
 }
 
-.search-form__pseudo-checkbox:active {
-  background-image: url(/images/Rectangle25.png);
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
+.search-form__checkbox:active + .search-form__pseudo-checkbox::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  display: flex;
 }
 
 button {
